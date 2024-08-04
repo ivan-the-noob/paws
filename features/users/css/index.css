@@ -84,11 +84,8 @@
     height: 200px;
     
 }
-
-
 .appointment{
     background-color: #7A3015;
-   
 }
 .front-text button{
     background-color:#7A3015;
@@ -154,9 +151,11 @@
 .services h3 {
     padding: 0 6vw;
     font-family: "Rubik", sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     font-style: normal;
     text-align: start;
+    font-size: 20px;
+    margin-left: 1.8rem;
 }
 
 .slider-container {
@@ -184,7 +183,7 @@
 }
 
 .service-card {
-    margin: 10px;
+    margin: 10px 0;
     flex: 0 0 auto;
     max-width: 300px; 
     scroll-snap-align: start; 
@@ -201,10 +200,25 @@
 
 .card-title {
     color: #7A3015;
+    font-size: 16px;
+}
+
+
+
+.card-header{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  background-color: transparent;
+  border-bottom: 1px solid  #7A3015;
 }
 
 .card-text{
    margin: 0 !important;
+   text-align: start;
+   font-size: 14px;
 }
 
 .price{
@@ -215,10 +229,11 @@
 
 
 .card-body i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     justify-content: center;
     display: grid;
     color: #7A3015;
+
 }
 
 .card-body p {
@@ -262,52 +277,86 @@
 
 /* Choose Us Section*/
   .choose-us{
-    background-color: #7A3015;
+    background-color: #FBF9FA;
  }
 
  .choose-us h3{
-    padding: 0 6vw;
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: start;
-    color: #fff;
+  padding: 0 6vw;
+  font-weight: bold;
+  text-align: start;
+  font-size: 20px;
+  margin-left: 1.8rem;
+  color: #7A3015;
+  font-size: 20px;
+
  }
 
-  .star-rating .fa-star {
-    color: gold;
-    font-size: 1.5rem; 
-  }
-  .choose-us .review-box {
-    background-color: #fff;
-    opacity: 0;
-    transform: translateX(0);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+ .choose-us .container{
+  padding: 0 40px;
+ }
+
+  
+.testimonial-card-custom {
+  margin-bottom: 20px;
+  background-color: #7A3015 !important;
+  color: #fff;
+  border: 2px solid #7A3015;
+  transform: translateX(0);
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  border-radius: 10px;
+  
+}
+.testimonial-card-custom img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.testimonial-card-custom p{
+  color: #fff;
+  font-size: 14px;
+}
+
+
+.testimonial-title {
+  font-weight: 500 !important;
+  font-size: 20px;
+  margin: auto;
+  padding-left: 10px;
+  color: #7A3015;
+}
+.testimonial-role {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+.testimonial-card-custom.show {
+  opacity: 1;
 }
 
 .choose-us .review-box.show {
-    opacity: 1;
+  opacity: 1;
 }
 
 .choose-us .review-box:nth-of-type(1),
 .choose-us .review-box:nth-of-type(2) {
-    transform: translateX(-100px); 
+  transform: translateX(-100px); 
 }
 
 .choose-us .review-box:nth-of-type(3),
 .choose-us .review-box:nth-of-type(4) {
-    transform: translateX(100px); 
+  transform: translateX(100px); 
 }
 
 .choose-us .review-box.show:nth-of-type(1),
 .choose-us .review-box.show:nth-of-type(2) {
-    transform: translateX(0); 
+  transform: translateX(0); 
 }
 
 .choose-us .review-box.show:nth-of-type(3),
 .choose-us .review-box.show:nth-of-type(4) {
-    transform: translateX(0);
+  transform: translateX(0);
 }
+
 
 
 /* Choose Us  End*/
@@ -322,6 +371,10 @@
     justify-content: center;
 }
 
+.about-text{
+  font-size: 16px;
+}
+
 .about-us img{
     width: 100%;
     height: 300px;
@@ -333,7 +386,6 @@
    font-weight: 400;
    font-style: normal;
    font-weight: bold;
-   padding-left: 20px;
    padding-bottom: 0;
     
 }
@@ -342,16 +394,16 @@
     background-color:#fff;
     color: #7A3015;
     border: none;
-    padding: 10px 100px;
+    padding: 8px 50px;
     border-radius: 100px;
     z-index: 999;
-    margin-left: 1rem;
+
 }
 
 .about-us button:hover{
-    background-color: #f5ebeb;
+  background-color: #BD3207;
     transition-duration: 400ms;
-    color: #000;
+    color: #fff;
 
 }
 
@@ -359,6 +411,8 @@
     margin-top: 5%;
     display: flex;
 }
+
+/* About Us End /*
 
 
 
@@ -369,11 +423,15 @@
 /* review Section */
 .review{
     background-color: #FBF9FA;
-    margin: 0;
+    padding: 100px 0;
+}
+
+.review h2{
+  font-size: 20px;
+  font-weight: bold;
 }
 .review-section {
-    background-color: #FBF9FA;;
-    padding: 40px 0;
+    background-color: #FBF9FA;
     color: #7A3015;
   }
   .review-form label {
@@ -382,28 +440,28 @@
   .review-form .form-control {
     background-color: #fff;
     color: #7A3015;
-    width: 70%;
     display: grid;
     margin: auto;
     border-radius: 5px;
+    width: 80%;
   }
   .review-form .form-control::placeholder {
     color: #D3B6A0;
   }
-  .review-form .btn {
-    background-color: #fff;
-    color: #7A3015;
+  .review-form .submit {
+    background-color: #7A3015;
+    color: #fff;
     border: none;
-    padding: 10px 100px;
+    padding: 10px 100px !important;
     border-radius: 50px;
     margin-left: 1rem;
     display: grid;
     margin: auto;
+    
   }
-  .review-form .btn:hover {
-    background-color: #f5ebeb;
+  .review-form .submit:hover {
+    background-color: #BD3207;
     transition-duration: 400ms;
-    color: #000;
   }
   
   .submit{
@@ -417,9 +475,6 @@
     display: grid;
     margin: auto;
   }
-
- 
-
   .review-form label {
     color: white;
   }
@@ -427,6 +482,7 @@
     background-color: #fff;
     color: #7A3015;
     border-radius: 5px;
+    border: 2px solid #7A3015;
   }
   .review-form .form-control::placeholder {
     color: #D3B6A0;
@@ -444,30 +500,7 @@
     transition-duration: 400ms;
     color: #000;
   }
-  .star-ratings {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-  }
-  .star-ratings input[type="radio"] {
-    display: none;
-  }
-  .star-ratings label {
-    font-size: 2em;
-    color: #D3B6A0;
-    cursor: pointer;
-  }
-  .star-ratings input[type="radio"]:checked ~ label {
-    color: gold;
-  }
-  .star-ratings label:hover,
-  .star-ratings label:hover ~ label {
-    color: gold;
-  }
 
-  .star-ratings{
-    color: gold;
-  }
   
   /* review Section End */
 
@@ -515,21 +548,23 @@
     bottom: 20px;
     right: 20px;
     z-index: 999;
-    background-color: #007bff; 
-    border: none;
-    border-radius: 20px;
+    background-color: #73BD1E;
+    border: transparent;
+    border-radius: 100%;
     cursor: pointer;
-    width: 200px;
     text-align: center;
     display: grid;
     justify-content: center;
     align-items: center;
     margin: auto;
     color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-#chat-bot-button p{
+#chat-bot-button i{
     margin: 0;
-    padding: 5px;
+    padding: 16px 12px;
+    font-size: 24px;
+    color: #fff;
 }
 
 
@@ -573,10 +608,16 @@
     background-color: #7A3015;
     color: #fff;
     padding: 10px;
-    display: flex;
+    padding-bottom: 0;
     justify-content: space-between;
-    align-items: center;
+    display: flex;
 }
+
+.chat-header p{
+  display: grid;
+  margin: auto;
+}
+
 
 #chat-header button {
     background: none;
@@ -584,14 +625,10 @@
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
-#chat-body {
-    flex: 1;
-    padding: 10px;
-    overflow-y: auto;
-    max-height: 300px; /* Adjust the height as needed */
-}
+
 
 #chat-footer {
     padding: 10px;
@@ -641,55 +678,18 @@
     height: 30px;
     border-radius: 50%;
 }
-.button-bot{
-    display: flex;
-}
+
 .button-bot button{
-    background-color: #7A3015;
-    color: #fff;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 100px;
-    z-index: 999;
-    margin-left: 1rem;
-    width: 70%;
+  background-color: #7A3015;
+  border: transparent;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
     
 }
 
-.horizontal-slider-container {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    user-select: none;
-}
-
-.horizontal-slider-content {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-}
-
-.horizontal-slider-content::-webkit-scrollbar {
-    display: none;
-}
-
-.horizontal-slider-content {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.button-bot {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    display: flex;
-    gap: 10px;
-}
-.line{
-    border-bottom: 5px solid #7A3015;
-    margin-top: 10px;
-    width: 100%;
-}
+/*Chat Bot End*/
 
 
 
