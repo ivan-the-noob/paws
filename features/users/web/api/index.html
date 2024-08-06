@@ -60,7 +60,7 @@
           <div class="col-md-6 order-2 order-md-1 text-md-left mb-4 mb-md-0 front-text">
               <h4>Book Your Pet's Next Appointment with Ease!</h4>
               <p>Welcome to <span class="vets-name">Bark Yard Pet Wellness Center</span>, your one-stop destination for pet grooming and care.</p>
-              <button class="btn btn-primary">Book an appointment</button>
+               <a href="appointment.html"><button class="btn btn-primary">Book an appointment</button></a>
           </div>
       </div>
   </div>
@@ -92,63 +92,130 @@
       <path fill="#7A3015" fill-opacity="1" d="M0,80L40,72C80,64,160,48,240,56C320,64,400,96,480,98.65C560,101.5,640,74.5,720,69.35C800,64,880,80,960,77.35C1040,74.5,1120,53.5,1200,48C1280,42.5,1360,53.5,1400,58.65L1440,64L1440,160L1400,160C1360,160,1280,160,1200,160C1120,160,1040,160,960,160C880,160,800,160,720,160C640,160,560,160,480,160C400,160,320,160,240,160C160,160,80,160,40,160L0,160Z"></path>
     </svg>
   </div>
-    <section class="services" id="services">
-      <h3>Services Category</h3>
-      <div class="container mt-4">
-          <div class="slider-container">
-              <div class="slider-wrapper">
-                  <div class="service-card">
-                      <div class="card">
-                          <div class="card-body text-center">
-                            <div class="card-header">
-                              <h5 class="card-title mt-2">Grooming</h5>
-                              <i class="fa-solid fa-scissors fa-2x"></i>
-                            </div>
-                              <p class="d-flex ml-5 price"><i class="fa-solid fa-tag"></i> 999.00</p>
-                              <p class="card-text">Professional grooming services to keep your pets looking their best.</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="service-card">
-                    <div class="card">
-                        <div class="card-body text-center">
-                          <div class="card-header">
-                            <h5 class="card-title mt-2">Grooming</h5>
-                            <i class="fa-solid fa-scissors fa-2x"></i>
-                          </div>
-                            <p class="d-flex ml-5 price"><i class="fa-solid fa-tag"></i> 999.00</p>
-                            <p class="card-text">Professional grooming services to keep your pets looking their best.</p>
-                        </div>
-                    </div>
+  <section class="services" id="services">
+    <h3>Services Category</h3>
+    
+    <div class="checkbox-container text-start">
+      <label>
+        <input type="checkbox" id="medical-checkbox" onclick="filterServices()" checked> Medical Services
+      </label>
+      <label>
+        <input type="checkbox" id="non-medical-checkbox" onclick="filterServices()"> Non-Medical Services
+      </label>
+    </div>
+  
+    <div class="container mt-4">
+      <div class="slider-container">
+        <div class="slider-wrapper">
+          
+          <div class="service-card medical-service">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="card-header">
+                  <h5 class="card-title mt-2">Diagnostic and Therapeutic</h5>
                 </div>
-                <div class="service-card">
-                  <div class="card">
-                      <div class="card-body text-center">
-                        <div class="card-header">
-                          <h5 class="card-title mt-2">Grooming</h5>
-                          <i class="fa-solid fa-scissors fa-2x"></i>
-                        </div>
-                          <p class="d-flex ml-5 price"><i class="fa-solid fa-tag"></i> 999.00</p>
-                          <p class="card-text">Professional grooming services to keep your pets looking their best.</p>
-                      </div>
-                  </div>
+                <p class="d-flex ml-5 price"><i class="fa-solid fa-tag"></i> 1200.00</p>
+                <p class="card-text">Comprehensive diagnostic and therapeutic services.</p>
               </div>
-              <div class="service-card">
-                <div class="card">
-                    <div class="card-body text-center">
-                      <div class="card-header">
-                        <h5 class="card-title mt-2">Grooming</h5>
-                        <i class="fa-solid fa-scissors fa-2x"></i>
-                      </div>
-                        <p class="d-flex ml-5 price"><i class="fa-solid fa-tag"></i> 999.00</p>
-                        <p class="card-text">Professional grooming services to keep your pets looking their best.</p>
-                    </div>
-                </div>
-            </div>          
-              </div>
+            </div>
           </div>
+          <div class="service-card medical-service">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="card-header">
+                  <h5 class="card-title mt-2">Preventive Health Care</h5>
+                </div>
+                <p class="d-flex ml-5 price"><i class="fa-solid fa-tag"></i> 850.00</p>
+                <p class="card-text">Preventive services to maintain your pet's health.</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-card medical-service">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="card-header">
+                  <h5 class="card-title mt-2">Internal Medicine Consults</h5>
+                </div>
+                <p class="d-flex ml-5 price"><i class="fa-solid fa-tag"></i> 1500.00</p>
+                <p class="card-text">Expert consultations in internal medicine.</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-card medical-service">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="card-header">
+                  <h5 class="card-title mt-2">Surgical Services</h5>
+                </div>
+                <p class="d-flex ml-5 price"><i class="fa-solid fa-tag"></i> 2500.00</p>
+                <p class="card-text">Professional surgical services for your pets.</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-card medical-service">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="card-header">
+                  <h5 class="card-title mt-2">Pharmacy</h5>
+                </div>
+                <p class="d-flex ml-5 price"><i class="fa-solid fa-tag"></i> 300.00</p>
+                <p class="card-text">Wide range of medications available at our pharmacy.</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-card medical-service">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="card-header">
+                  <h5 class="card-title mt-2">House Visit</h5>
+                </div>
+                <p class="d-flex ml-5 price"><i class="fa-solid fa-tag"></i> 500.00</p>
+                <p class="card-text">House visit services for pets needing at-home care.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="service-card non-medical-service">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="card-header">
+                  <h5 class="card-title mt-2">Grooming</h5>
+                  <i class="fa-solid fa-scissors fa-2x"></i>
+                </div>
+                <p class="d-flex ml-5 price"><i class="fa-solid fa-tag"></i> 999.00</p>
+                <p class="card-text">Professional grooming services to keep your pets looking their best.</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-card non-medical-service">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="card-header">
+                  <h5 class="card-title mt-2">Boarding</h5>
+                </div>
+                <p class="d-flex ml-5 price"><i class="fa-solid fa-tag"></i> 700.00</p>
+                <p class="card-text">Comfortable and safe boarding services for your pets.</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-card non-medical-service">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="card-header">
+                  <h5 class="card-title mt-2">Pet Supplies</h5>
+                </div>
+                <p class="d-flex ml-5 price"><i class="fa-solid fa-tag"></i> 300.00</p>
+                <p class="card-text">A wide range of pet supplies for your pet's needs.</p>
+              </div>
+            </div>
+          </div>
+        
+        </div>
       </div>
+    </div>
   </section>
+  
+  
 
   <section class="choose-us py-5" id="choose-us">
     <h3 class="mb-4" id="review">Why Choose Us</h3>
@@ -290,7 +357,7 @@
 
 
 </body>
-<script src="../../function/script/chatbot_questionslide.js"></script>
+<script src="../../function/script/services-check.js"></script>
 <script src="../../function/script/chatbot-toggle.js"></script>
 <script src="../../function/script/scroll-choose_us.js"></script>
 <script src="../../function/script/scroll-service.js"></script>
