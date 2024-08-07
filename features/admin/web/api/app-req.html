@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/app-req.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar flex-column bg-white shadow-sm p-3 collapse d-md-flex" id="navbar">
+        <div class="navbar-links">
+            <a class="navbar-brand d-none d-md-block logo-container" href="#">
+                <img src="../../../../assets/img/logo.png">
+            </a>
+            <a href="#dashboard">
+                <i class="fa-solid fa-gauge"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#appointment" class="navbar-highlight">
+                <i class="fa-regular fa-calendar-check"></i>
+                <span>Appointment Request</span>
+            </a>
+            <a href="#notification">
+                <i class="fa-solid fa-bell"></i>
+                <span>Notification</span>
+            </a>
+            <div class="maintenance">
+                <p class="maintenance-text">Maintenance</p>
+                <a href="#category">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Category List</span>
+                </a>
+                <a href="#services">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>Service List</span>
+                </a>
+                <a href="#admin-user">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <span>Admin User List</span>
+                </a>
+                <a href="#settings">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content flex-grow-1">
+        <div class="header">
+            <button class="navbar-toggler d-block d-md-none" type="button" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    style="stroke: black; fill: none;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+            <div class="col-8 col-md-6 col-lg-3">
+                <div class="search-bar">
+                    <i class="fa fa-magnifying-glass"></i>
+                    <input type="text" class="form-control" placeholder="Search...">
+                </div>
+            </div>
+            <div class="profile-admin">
+                <img src="../../../../assets/img/vet logo.jpg" alt="Profile Picture">
+            </div>
+        </div>
+        <div class="app-req">
+            <h3>Appointment Request</h3>
+            <div class="walk-in">
+                <div class="mb-3">
+                    <div class="col-8 col-md-6 col-lg-16">
+                        <div class="search-bars">
+                            <i class="fa fa-magnifying-glass"></i>
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#walkInModal">
+                        + Walk In
+                    </button>
+                </div>
+            </div>
+            <div class="modal fade" id="walkInModal" tabindex="-1" aria-labelledby="walkInModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="walkInModalLabel">Walk In Appointment</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Owner Information</h6>
+                                        <div class="mb-3">
+                                            <label for="ownerName" class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="ownerName"
+                                                placeholder="Racel Mae Loquellano">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="contactNum" class="form-label">Contact #</label>
+                                            <input type="number" class="form-control" id="contactNum"
+                                                placeholder="09123456789">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="ownerEmail" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="ownerEmail"
+                                                placeholder="bardyardpets@gmail.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="ownerAddress" class="form-label">Address</label>
+                                            <textarea class="form-control" id="ownerAddress" rows="3"
+                                                placeholder="2nd Floor A & A Building Magdiwang Highway"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6>Pet Information</h6>
+                                        <div class="mb-3">
+                                            <label for="petType" class="form-label">Pet Type</label>
+                                            <select class="form-control" id="petType">
+                                                <option>Cat</option>
+                                                <option>Dog</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="breed" class="form-label">Breed</label>
+                                            <input type="text" class="form-control" placeholder="husky" id="breed">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="age" class="form-label">Age</label>
+                                            <input type="number" class="form-control" placeholder="1 Yr Old" id="age">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="serviceCategory" class="form-label">Service Category</label>
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                    id="serviceCategoryDropdown" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    Select Category
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="serviceCategoryDropdown">
+                                                    <li><a class="dropdown-item" href="#"
+                                                            data-value="medical">Medical</a></li>
+                                                    <li><a class="dropdown-item" href="#"
+                                                            data-value="nonMedical">Non-Medical</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="service" class="form-label">Service</label>
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                    id="serviceDropdown" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    Select Service
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                                    <!-- Medical Services -->
+                                                    <div class="medical-services">
+                                                        <li><a class="dropdown-item" href="#"
+                                                                data-value="1200.00">Diagnostic and Therapeutic -
+                                                                ₱1200.00</a></li>
+                                                        <li><a class="dropdown-item" href="#"
+                                                                data-value="850.00">Preventive Health Care - ₱850.00</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#"
+                                                                data-value="1500.00">Internal Medicine Consults -
+                                                                ₱1500.00</a></li>
+                                                        <li><a class="dropdown-item" href="#"
+                                                                data-value="2500.00">Surgical Services - ₱2500.00</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#"
+                                                                data-value="300.00">Pharmacy - ₱300.00</a></li>
+                                                        <li><a class="dropdown-item" href="#" data-value="500.00">House
+                                                                Visit - ₱500.00</a></li>
+                                                    </div>
+                                                    <!-- Non-Medical Services -->
+                                                    <div class="nonMedical-services">
+                                                        <li><a class="dropdown-item" href="#"
+                                                                data-value="999.00">Grooming - ₱999.00</a></li>
+                                                        <li><a class="dropdown-item" href="#"
+                                                                data-value="700.00">Boarding - ₱700.00</a></li>
+                                                        <li><a class="dropdown-item" href="#" data-value="300.00">Pet
+                                                                Supplies - ₱300.00</a></li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3">
+                                            <label for="totalPayment" class="form-label">Total Payment</label>
+                                            <p id="totalPayment">₱0.00</p>
+                                        </div>
+                                        <div class="mt-3">
+                                            <button class="btn btn-primary" id="bookAppointment">Book
+                                                Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover table-remove-borders">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>#</th>
+                            <th>Date Created</th>
+                            <th>Code</th>
+                            <th>Owner</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2024-06-26 13:40</td>
+                            <td>OVAS-2024060010</td>
+                            <td>Frances Louise Medrano</td>
+                            <td><span class="badge bg-primary">Pending</span></td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Pending</a></li>
+                                        <li><a class="dropdown-item" href="#">Confirm</a></li>
+                                        <li><a class="dropdown-item" href="#">Complete</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2024-06-26 09:16</td>
+                            <td>OVAS-2024060009</td>
+                            <td>Frances Louise Medrano</td>
+                            <td><span class="badge bg-primary">Pending</span></td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                        <li><a class="dropdown-item" href="#">Pending</a></li>
+                                        <li><a class="dropdown-item" href="#">Confirm</a></li>
+                                        <li><a class="dropdown-item" href="#">Complete</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>2024-06-26 09:11</td>
+                            <td>OVAS-2024060008</td>
+                            <td>Frances Louise Medrano</td>
+                            <td><span class="badge bg-primary">Pending</span></td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                        <li><a class="dropdown-item" href="#">Pending</a></li>
+                                        <li><a class="dropdown-item" href="#">Confirm</a></li>
+                                        <li><a class="dropdown-item" href="#">Complete</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>2024-06-26 03:58</td>
+                            <td>OVAS-2024060007</td>
+                            <td>Frances Louise Medrano</td>
+                            <td><span class="badge bg-primary">Pending</span></td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                                        <li><a class="dropdown-item" href="#">Pending</a></li>
+                                        <li><a class="dropdown-item" href="#">Confirm</a></li>
+                                        <li><a class="dropdown-item" href="#">Complete</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>2024-06-26 03:54</td>
+                            <td>OVAS-2024060006</td>
+                            <td>Kim</td>
+                            <td><span class="badge bg-success">Confirm</span></td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                                        <li><a class="dropdown-item" href="#">Pending</a></li>
+                                        <li><a class="dropdown-item" href="#">Confirm</a></li>
+                                        <li><a class="dropdown-item" href="#">Complete</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>2024-06-26 00:56</td>
+                            <td>OVAS-2024060005</td>
+                            <td>Kim</td>
+                            <td><span class="badge bg-success">Confirm</span></td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+                                        <li><a class="dropdown-item" href="#">Pending</a></li>
+                                        <li><a class="dropdown-item" href="#">Confirm</a></li>
+                                        <li><a class="dropdown-item" href="#">Complete</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>2024-06-25 23:39</td>
+                            <td>OVAS-2024060004</td>
+                            <td>Racel Mae</td>
+                            <td><span class="badge bg-primary">Pending</span></td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton7">
+                                        <li><a class="dropdown-item" href="#">Pending</a></li>
+                                        <li><a class="dropdown-item" href="#">Confirm</a></li>
+                                        <li><a class="dropdown-item" href="#">Complete</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>2024-06-25 23:10</td>
+                            <td>OVAS-2024060003</td>
+                            <td>Anne</td>
+                            <td><span class="badge bg-primary">Pending</span></td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton8" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton8">
+                                        <li><a class="dropdown-item" href="#">Pending</a></li>
+                                        <li><a class="dropdown-item" href="#">Confirm</a></li>
+                                        <li><a class="dropdown-item" href="#">Complete</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>2024-06-25 22:28</td>
+                            <td>OVAS-2024060002</td>
+                            <td>Anne</td>
+                            <td><span class="badge bg-primary">Pending</span></td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton9" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton9">
+                                        <li><a class="dropdown-item" href="#">Pending</a></li>
+                                        <li><a class="dropdown-item" href="#">Confirm</a></li>
+                                        <li><a class="dropdown-item" href="#">Complete</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>2024-06-25 22:28</td>
+                            <td>OVAS-2024060002</td>
+                            <td>Anne</td>
+                            <td><span class="badge bg-primary">Pending</span></td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton9" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton9">
+                                        <li><a class="dropdown-item" href="#">Pending</a></li>
+                                        <li><a class="dropdown-item" href="#">Confirm</a></li>
+                                        <li><a class="dropdown-item" href="#">Complete</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>2024-06-25 22:02</td>
+                            <td>OVAS-2024060001</td>
+                            <td>Anne</td>
+                            <td><span class="badge bg-success">Confirm</span></td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton10" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton10">
+                                        <li><a class="dropdown-item" href="#">Pending</a></li>
+                                        <li><a class="dropdown-item" href="#">Confirm</a></li>
+                                        <li><a class="dropdown-item" href="#">Complete</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end" id="paginationControls">
+                </ul>
+            </nav>
+
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const itemsPerPage = 10;
+                const allRows = document.querySelectorAll('table tbody tr');
+                const paginationControls = document.getElementById('paginationControls');
+                let currentPageItems = Array.from(allRows);
+                let currentPage = 1;
+
+                function updatePaginationControls() {
+                    const pageCount = Math.ceil(currentPageItems.length / itemsPerPage);
+                    paginationControls.innerHTML = '';
+
+                    if (pageCount > 1) {
+                        const prevLi = document.createElement('li');
+                        prevLi.classList.add('page-item');
+                        const prevA = document.createElement('a');
+                        prevA.classList.add('page-link');
+                        prevA.href = '#';
+                        prevA.textContent = '<<';
+                        prevA.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            if (currentPage > 1) {
+                                showPage(currentPage - 1);
+                            }
+                        });
+                        prevLi.appendChild(prevA);
+                        paginationControls.appendChild(prevLi);
+
+                        for (let i = 1; i <= pageCount; i++) {
+                            const li = document.createElement('li');
+                            li.classList.add('page-item');
+                            const a = document.createElement('a');
+                            a.classList.add('page-link');
+                            a.href = '#';
+                            a.dataset.page = i;
+                            a.textContent = i;
+                            a.addEventListener('click', function (e) {
+                                e.preventDefault();
+                                showPage(parseInt(this.dataset.page));
+                            });
+                            li.appendChild(a);
+                            paginationControls.appendChild(li);
+                        }
+
+                        const nextLi = document.createElement('li');
+                        nextLi.classList.add('page-item');
+                        const nextA = document.createElement('a');
+                        nextA.classList.add('page-link');
+                        nextA.href = '#';
+                        nextA.textContent = '>>';
+                        nextA.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            if (currentPage < pageCount) {
+                                showPage(currentPage + 1);
+                            }
+                        });
+                        nextLi.appendChild(nextA);
+                        paginationControls.appendChild(nextLi);
+
+                        paginationControls.querySelectorAll('.page-item')[1].classList.add('active');
+                    }
+                }
+
+                function showPage(page) {
+                    currentPage = page;
+                    const start = (page - 1) * itemsPerPage;
+                    const end = start + itemsPerPage;
+                    currentPageItems.forEach((item, index) => {
+                        if (index >= start && index < end) {
+                            item.style.display = '';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+
+                    document.querySelectorAll('#paginationControls .page-item').forEach(item => item.classList.remove('active'));
+                    document.querySelectorAll('#paginationControls .page-item')[page].classList.add('active');
+                }
+
+                function initPagination() {
+                    allRows.forEach(item => item.style.display = 'none');
+                    updatePaginationControls();
+                    if (currentPageItems.length > 0) {
+                        showPage(1);
+                    }
+                }
+
+                initPagination();
+            });
+        </script>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" crossorigin="anonymous">
+        </script>
+        <script src="../../function/script/toggle-menu.js"></script>
+        <script src=""></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>

@@ -160,106 +160,135 @@ body {
 }
 /*Navbar Section End*/
 
-/*Dashboard Section*/
-.dashboard{
+/*Appointment Request Section*/
+
+.app-req{
     padding: 20px;
-
 }
-.dashboard h3{
-    padding:  20px 30px;
+h3{
+    padding: 20px 30px; 
 }
 
-.card-box {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 40px;
-   
+
+.table-remove-borders th,
+.table-remove-borders td {
+    border: none !important;
     
 }
-.cc{
+.table-remove-borders th{
+    background-color: #7A3015;
+    color: #fff;
+}
+
+.table-remove-borders td{
+    background-color: #F1F5F9 !important;
+}
+
+tr:hover{
+    background-color: #FFFFFF;
+}
+
+
+
+.table-responsive{
+    padding: 0 60px;
+}
+
+.pagination {
+    display: flex !important;
+    justify-content: center;
+    padding-right: 80px;
+    padding-top: 20px;
+}
+.pagination .page-item {
+    margin: 0 5px;
+}
+.pagination .page-link {
+    color: #000;
+}
+.pagination .page-link:hover {
+    color: #007bff;
+}
+
+.walk-in{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.search-bars {
+    flex-grow: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+.search-bars input {
+    height: 6vh;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding-left: 40px; 
+}
+
+.search-bars i {
+    position: absolute;
+    left: 10px; 
+    font-size: 18px;
+    color: #000;
+    padding: 5px;
+}
+
+
+.modal-body label{
+    color: #7A3015;
+    font-size: 20px;
+    font-weight: 500;
+}
+.modal-body h6{
+    color:#7A3015;
+    font-size: 22px;
+}
+
+.modal-body p{
+    color: #7A3015;
+}
+
+#dayModal .container{
     padding: 0;
 }
-.card {
-    flex: 1;
-    margin: 0 10px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #cabebe;
-    display: flex;
-    margin-top: 8px;
-   
-}
-.card h5 {
-    margin-bottom: 10px;
-}
-.card p {
+
+
+.modal-body .sched p{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0;
     margin: 0;
 }
-.card .icon {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-.card .trend {
+
+
+/*Appointment Request End*/
+
+
+.pagination .page-item .page-link {
+    border-radius: 50%;
+    background-color: #7A3015;
+    color: white;
+    width: 40px;
+    height: 40px;
     display: flex;
-    align-items: center;
-    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center; 
+    border: none;
 }
 
-.card p{
-    font-size: 14px !important;
+.pagination .page-item.active .page-link {
+    background-color: #5a220d;
+    border-color: #5a220d;
 }
 
-.card h5{
-    padding: 10px 0;
+.pagination .page-item .page-link:hover {
+    background-color: #5a220d;
+    color: white;
 }
-.card .trend i {
-    margin-right: 5px;
-    font-size: 12px;
-}
-.card-up i {
-    color: green;
-}
-.card-down i {
-    color: red;
-}
-.cards{
-    display: flex;
-    justify-content: space-between;
-}
-
-.cards i{
-    font-size: 30px;
-    color: rgb(128, 37, 128);
-    padding:  8px 0px;
-}
-
-.flex-container{
-    display: flex;
-    padding: 0 20px;
-    flex-wrap: wrap;
- 
-}
-
-.chart-container {
-    margin-top: 50px !important;
-    padding: 20px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    width: 48%;
-    display: flex;
-    margin: auto;
-    border: 1px solid #cabebe;
-    
-}
-
-@media (max-width: 768px) {
-    .chart-container {
-        width: 100%;
-        display: block; 
-      
-        padding: 0;
-    }
-}
-
-
-/*Dashboard Section End*/
