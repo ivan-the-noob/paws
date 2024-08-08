@@ -1,8 +1,0 @@
-{
-    "development": {
-        "cssPath": "../ovas_first/features/users/css/index.css"
-    },
-    "production": {
-        "cssPath": "/features/users/css/index.css"
-    }
-}
