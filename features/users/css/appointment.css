@@ -143,6 +143,7 @@
     border-radius: 5px;
     display: flex;
     margin: auto;
+    align-items: center;
 }
 .tab-bar button{
     background-color: transparent !important;
