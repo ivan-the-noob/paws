@@ -9,7 +9,14 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <base href="../ovas_first/">
-  <link rel="stylesheet" href="features/users/css/index.css">
+  <script>
+    const env = process.env.NODE_ENV || 'development'; // Set NODE_ENV to 'production' on Vercel
+    fetch('/config.json')
+      .then(response => response.json())
+      .then(config => {
+        document.write(`<link rel="stylesheet" href="${config[env].cssPath}">`);
+      });
+  </script>
 
 
 </head>
