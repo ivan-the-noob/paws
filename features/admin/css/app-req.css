@@ -267,6 +267,11 @@ tr:hover{
     margin: 0;
 }
 
+tr:hover{
+    color: #fff;
+    background-color: #000;
+}
+
 
 /*Appointment Request End*/
 
