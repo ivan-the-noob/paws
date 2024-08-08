@@ -145,6 +145,10 @@
     margin: auto;
     align-items: center;
 }
+
+.tab-bar .none{
+    cursor: none;
+}
 .tab-bar button{
     background-color: transparent !important;
     color: #7A3015;
