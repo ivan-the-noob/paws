@@ -32,6 +32,17 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+});
+var basePath = isLocal ? '../ovas_first/' : '';
+
+// Array of script paths
+var scripts = ['features/users/function/script/services-check.js', 'features/users/function/script/chatbot-toggle.js', 'features/users/function/script/scroll-choose_us.js', 'features/users/function/script/scroll-service.js', 'features/users/function/script/services-carousel.js'];
+
+// Dynamically add the script tags to the document
+scripts.forEach(function (script) {
+  var scriptElement = document.createElement('script');
+  scriptElement.src = basePath + script;
+  document.head.appendChild(scriptElement);
 });</script>
 
 </head>
@@ -387,7 +398,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="line"></div>
     <div class="admin mt-3">
       <div class="admin-chat">
-        <img src="/vet logo.5177bd72.jpg" alt="Admin">
+        <img src="/vet logo.93f4ee3f.jpg" alt="Admin">
         <p>Admin</p>
       </div>
       <p class="text">Hello, I am Chat Bot. Please Ask me a question just by pressing the question buttons.</p>
