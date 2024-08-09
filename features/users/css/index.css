@@ -708,6 +708,10 @@
     
 }
 
+#chat-bot-button.hidden {
+  display: none;
+}
+
 /*Chat Bot End*/
 
 

@@ -57,6 +57,18 @@
             document.head.appendChild(scriptElement);
         });
 
+        if (isLocal) {
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href]'); // Select all <a> tags with href attribute
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (!href.startsWith('http') && !href.startsWith('#')) { // Exclude external and anchor links
+                    link.setAttribute('href', `../ovas_first${href}`);
+                }
+            });
+        });
+    }
+
   
 </script>
 
