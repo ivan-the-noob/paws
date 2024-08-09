@@ -83,33 +83,63 @@
             </div>
             <div class="container">
               <div class="row">
-                <div class="col-md-6">
-                  <h6>Owner Information</h6>
+                <!-- Client Information -->
+                <div class="col-md-4">
+                  <h6>Client Information</h6>
                   <div class="mb-3">
-                    <label for="ownerName" class="form-label">Name</label>
+                    <label for="ownerName" class="form-label">Client Name</label>
                     <input type="text" class="form-control" id="ownerName" placeholder="Racel Mae Loquellano">
                   </div>
                   <div class="mb-3">
-                    <label for="contactNum" class="form-label">Contact #</label>
-                    <input type="number" class="form-control" id="contactNum" placeholder="09123456789">
+                    <label for="ownerAddress" class="form-label">Complete Address</label>
+                    <textarea class="form-control" id="ownerAddress" rows="3"
+                      placeholder="2nd Floor A & A Building Magdiwang Highway"></textarea>
+                  </div>
+                  <div class="mb-3 contacts">
+                    <label for="contactNum" class="form-labels">Contact Details</label>
+                    <input type="number" class="form-control" id="contactNum" placeholder="Mobile">
+                    <input type="number" class="form-control" id="contactNum" placeholder="Home">
+                    <input type="number" class="form-control" id="contactNum" placeholder="Work">
+                    <input type="number" class="form-control" id="contactNum" placeholder="Viber">
                   </div>
                   <div class="mb-3">
                     <label for="ownerEmail" class="form-label">Email</label>
                     <input type="email" class="form-control" id="ownerEmail" placeholder="bardyardpets@gmail.com">
                   </div>
                   <div class="mb-3">
-                    <label for="ownerAddress" class="form-label">Address</label>
-                    <textarea class="form-control" id="ownerAddress" rows="3"
-                      placeholder="2nd Floor A & A Building Magdiwang Highway"></textarea>
+                    <label for="preferredContact" class="form-label">Preferred Contact</label>
+                    <div class="d-flex flex-wrap">
+                      <div class="form-check me-3">
+                        <input class="form-check-input" type="radio" name="preferredContact" id="preferredEmail" value="Email">
+                        <label class="form-check-label" for="preferredEmail">Email</label>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
+                
+                     
+          
+                <!-- Pet Information -->
+                <div class="col-md-4">
                   <h6>Pet Information</h6>
                   <div class="mb-3">
-                    <label for="petType" class="form-label">Pet Type</label>
+                    <label for="pet-name" class="form-label">Pet's Name</label>
+                    <input type="text" class="form-control" placeholder="Ara" id="pet-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="petType" class="form-label">Species</label>
                     <select class="form-control" id="petType">
                       <option>Cat</option>
                       <option>Dog</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="petType" class="form-label">Sex</label>
+                    <select class="form-control" id="sex">
+                      <option>Male Intact</option>
+                      <option>Male Neutered (kapon)</option>
+                      <option>Female Intact</option>
+                      <option>Female Spayed (kapon)</option>
                     </select>
                   </div>
                   <div class="mb-3">
@@ -117,9 +147,25 @@
                     <input type="text" class="form-control" placeholder="husky" id="breed">
                   </div>
                   <div class="mb-3">
-                    <label for="age" class="form-label">Age</label>
-                    <input type="number" class="form-control" placeholder="1 Yr Old" id="age">
+                    <label for="Color & markings" class="form-label">Colors and Marking</label>
+                    <input type="text" class="form-control" placeholder="White" id="color-markings">
                   </div>
+                  <div class="mb-3">
+                    <label for="Microchip No" class="form-label">Microchip No.</label>
+                    <input type="number" class="form-control" placeholder="312421" id="micro-no">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Date of Birth" class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control" placeholder="01/01/24" id="micro-no">
+                  </div>
+                  <div class="mb-3">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="number" class="form-control" placeholder="Months" id="age">
+                  </div>  
+                </div> 
+                  <!-- Services (Nested inside Pet Information) -->
+                <div class="col-md-4">
+                  <h6>Services</h6>
                   <div class="mb-3">
                     <label for="serviceCategory" class="form-label">Service Category</label>
                     <div class="dropdown">
@@ -133,7 +179,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="mb-3">
                     <label for="service" class="form-label">Service</label>
                     <div class="dropdown">
@@ -162,7 +207,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="mt-3">
                     <label for="totalPayment" class="form-label">Total Payment</label>
                     <p id="totalPayment">₱0.00</p>
@@ -171,9 +215,11 @@
                     <button class="book-save">Book Appointment</button>
                   </div>
                 </div>
-
+                </div>
+               
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
