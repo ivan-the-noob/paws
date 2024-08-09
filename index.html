@@ -23,6 +23,7 @@
   const isLocal = !window.location.hostname.includes('vercel.app');
 
   document.addEventListener('DOMContentLoaded', function() {
+      // Adjust img src if running locally
       if (isLocal) {
           const images = document.querySelectorAll('img');
           images.forEach(img => {
@@ -32,6 +33,7 @@
           });
       }
 
+      // Adjust a href if running locally
       const links = document.querySelectorAll('a');
       links.forEach(link => {
           const href = link.getAttribute('href');
