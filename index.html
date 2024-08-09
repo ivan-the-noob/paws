@@ -31,8 +31,18 @@
               }
           });
       }
-      
+
+      const links = document.querySelectorAll('a');
+      links.forEach(link => {
+          const href = link.getAttribute('href');
+          if (!href.startsWith('http') && !href.startsWith('#')) {
+              link.setAttribute('href', `../ovas_first/${href}`);
+          }
+      });
   });
+
+
+  
 
   const basePath = isLocal ? '../ovas_first/' : '';
         const scripts = [
@@ -102,7 +112,7 @@
           <h4>Book Your Pet's Next Appointment with Ease!</h4>
           <p>Welcome to <span class="vets-name">Bark Yard Pet Wellness Center</span>, your one-stop destination for pet
             grooming and care.</p>
-          <a href="../ovas_first/features/users/web/api/appointment.html"><button class="btn btn-primary">Book an
+          <a href="/features/users/web/api/appointment.html"><button class="btn btn-primary">Book an
               appointment</button></a>
         </div>
       </div>
