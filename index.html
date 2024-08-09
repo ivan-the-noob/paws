@@ -24,7 +24,6 @@
 
   document.addEventListener('DOMContentLoaded', function() {
       if (isLocal) {
-          // Adjust img src if running locally
           const images = document.querySelectorAll('img');
           images.forEach(img => {
               if (!img.src.startsWith('http')) {
@@ -32,7 +31,6 @@
               }
           });
 
-          // Adjust a href if running locally
           const links = document.querySelectorAll('a');
           links.forEach(link => {
               const href = link.getAttribute('href');
