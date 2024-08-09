@@ -23,44 +23,42 @@
   const isLocal = !window.location.hostname.includes('vercel.app');
 
   document.addEventListener('DOMContentLoaded', function() {
-      // Adjust img src if running locally
       if (isLocal) {
+          // Adjust img src if running locally
           const images = document.querySelectorAll('img');
           images.forEach(img => {
               if (!img.src.startsWith('http')) {
                   img.src = `../ovas_first${img.getAttribute('src')}`;
               }
           });
-      }
 
-      // Adjust a href if running locally
-      const links = document.querySelectorAll('a');
-      links.forEach(link => {
-          const href = link.getAttribute('href');
-          if (!href.startsWith('http') && !href.startsWith('#')) {
-              link.setAttribute('href', `../ovas_first/${href}`);
-          }
-      });
+          // Adjust a href if running locally
+          const links = document.querySelectorAll('a');
+          links.forEach(link => {
+              const href = link.getAttribute('href');
+              if (!href.startsWith('http') && !href.startsWith('#')) {
+                  link.setAttribute('href', `../ovas_first/${href}`);
+              }
+          });
+      }
   });
 
-
-  
-
   const basePath = isLocal ? '../ovas_first/' : '';
-        const scripts = [
-            'features/users/function/script/services-check.js',
-            'features/users/function/script/chatbot-toggle.js',
-            'features/users/function/script/scroll-choose_us.js',
-            'features/users/function/script/scroll-service.js',
-            'features/users/function/script/services-carousel.js'
-        ];
+  const scripts = [
+      'features/users/function/script/services-check.js',
+      'features/users/function/script/chatbot-toggle.js',
+      'features/users/function/script/scroll-choose_us.js',
+      'features/users/function/script/scroll-service.js',
+      'features/users/function/script/services-carousel.js'
+  ];
 
-        scripts.forEach(script => {
-            const scriptElement = document.createElement('script');
-            scriptElement.src = basePath + script;
-            document.head.appendChild(scriptElement);
-        });
+  scripts.forEach(script => {
+      const scriptElement = document.createElement('script');
+      scriptElement.src = basePath + script;
+      document.head.appendChild(scriptElement);
+  });
 </script>
+
   <!--Connection Vercel and Local Host End-->
 </head>
 
