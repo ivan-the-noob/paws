@@ -19,6 +19,21 @@ linkElement.rel = 'stylesheet';
 linkElement.href = cssPath;
 document.head.appendChild(linkElement);</script>
 
+<script>// Detect if the site is running locally by checking the hostname
+var isLocal = !window.location.hostname.includes('vercel.app');
+
+// Add the local prefix to all image sources if running locally
+document.addEventListener('DOMContentLoaded', function () {
+  if (isLocal) {
+    var images = document.querySelectorAll('img');
+    images.forEach(function (img) {
+      if (!img.src.startsWith('http')) {
+        img.src = "../ovas_first".concat(img.getAttribute('src'));
+      }
+    });
+  }
+});</script>
+
 </head>
 
 <body>
@@ -372,7 +387,7 @@ document.head.appendChild(linkElement);</script>
     <div class="line"></div>
     <div class="admin mt-3">
       <div class="admin-chat">
-        <img src="/vet logo.93f4ee3f.jpg" alt="Admin">
+        <img src="/vet logo.5177bd72.jpg" alt="Admin">
         <p>Admin</p>
       </div>
       <p class="text">Hello, I am Chat Bot. Please Ask me a question just by pressing the question buttons.</p>

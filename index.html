@@ -22,6 +22,26 @@
     document.head.appendChild(linkElement);
 </script>
 
+<script>
+  // Detect if the site is running locally by checking the hostname
+  const isLocal = !window.location.hostname.includes('vercel.app');
+
+  // Add the local prefix to all image sources if running locally
+  document.addEventListener('DOMContentLoaded', function() {
+      if (isLocal) {
+          const images = document.querySelectorAll('img');
+          images.forEach(img => {
+              if (!img.src.startsWith('http')) {
+                  img.src = `../ovas_first${img.getAttribute('src')}`;
+              }
+          });
+      }
+      
+  });
+
+  
+</script>
+
 </head>
 
 <body>
@@ -380,7 +400,7 @@
     <div class="line"></div>
     <div class="admin mt-3">
       <div class="admin-chat">
-        <img src="../../../../assets/img/vet logo.jpg" alt="Admin">
+        <img src="../ovas_first/assets/img/vet logo.jpg" alt="Admin">
         <p>Admin</p>
       </div>
       <p class="text">Hello, I am Chat Bot. Please Ask me a question just by pressing the question buttons.</p>
@@ -390,11 +410,11 @@
 
 
 </body>
-<script src="/features/users/function/script/services-check.js"></script>
-<script src="/features/users/function/script/chatbot-toggle.js"></script>
-<script src="/features/users/function/script/scroll-choose_us.js"></script>
-<script src="/features/users/function/script/scroll-service.js"></script>
-<script src="/features/users/function/script/services-carousel.js"></script>
+<script src="../ovas_first/features/users/function/script/services-check.js"></script>
+<script src="../ovas_first/features/users/function/script/chatbot-toggle.js"></script>
+<script src="../ovas_first/features/users/function/script/scroll-choose_us.js"></script>
+<script src="../ovas_first/features/users/function/script/scroll-service.js"></script>
+<script src="../ovas_first/features/users/function/script/services-carousel.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
