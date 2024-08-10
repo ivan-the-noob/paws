@@ -46,10 +46,11 @@
 
 .btn-theme{
     background-color: #7A3015;
-    color: #fff;
+    color: #fff !important;
     border: none;
     border-radius: 3px;
     padding: 10px 15px;
+    text-decoration: none;
 }
 
 /* navbar end */
