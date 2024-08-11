@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#walkInModal">
+                    <button type="button" class="walkin" data-bs-toggle="modal" data-bs-target="#walkInModal">
                         + Walk In
                     </button>
                 </div>
@@ -216,8 +216,11 @@
                             <th>Date Created</th>
                             <th>Code</th>
                             <th>Owner</th>
+                            <th>Species</th>
+                            <th>Breed</th>
                             <th>Status</th>
-                            <th>Action</th>
+                            <th>Service</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -226,17 +229,19 @@
                             <td>2024-06-26 13:40</td>
                             <td>OVAS-2024060010</td>
                             <td>Frances Louise Medrano</td>
+                            <td>Dog</td>
+                            <td>Golden Retriever</td>
                             <td><span class="badge bg-primary">Pending</span></td>
+                            <td>Grooming</td>
                             <td>
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Action
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#">Pending</a></li>
                                         <li><a class="dropdown-item" href="#">Confirm</a></li>
                                         <li><a class="dropdown-item" href="#">Complete</a></li>
+                                        <li><a class="dropdown-item" href="#">Decline</a></li>
                                     </ul>
                                 </div>
                             </td>
@@ -246,17 +251,19 @@
                             <td>2024-06-26 09:16</td>
                             <td>OVAS-2024060009</td>
                             <td>Frances Louise Medrano</td>
+                            <td>Cat</td>
+                            <td>Siamese</td>
                             <td><span class="badge bg-primary">Pending</span></td>
+                            <td>Diagnostic and Therapeutic</td>
                             <td>
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Action
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                        
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                        <li><a class="dropdown-item" href="#">Pending</a></li>
                                         <li><a class="dropdown-item" href="#">Confirm</a></li>
                                         <li><a class="dropdown-item" href="#">Complete</a></li>
+                                        <li><a class="dropdown-item" href="#">Decline</a></li>
                                     </ul>
                                 </div>
                             </td>
@@ -266,17 +273,19 @@
                             <td>2024-06-26 09:11</td>
                             <td>OVAS-2024060008</td>
                             <td>Frances Louise Medrano</td>
+                            <td>Rabbit</td>
+                            <td>Holland Lop</td>
                             <td><span class="badge bg-primary">Pending</span></td>
+                            <td>Preventive Health Care</td>
                             <td>
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Action
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                        
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                                        <li><a class="dropdown-item" href="#">Pending</a></li>
                                         <li><a class="dropdown-item" href="#">Confirm</a></li>
                                         <li><a class="dropdown-item" href="#">Complete</a></li>
+                                        <li><a class="dropdown-item" href="#">Decline</a></li>
                                     </ul>
                                 </div>
                             </td>
@@ -286,17 +295,19 @@
                             <td>2024-06-26 03:58</td>
                             <td>OVAS-2024060007</td>
                             <td>Frances Louise Medrano</td>
+                            <td>Reptile</td>
+                            <td>N/A</td>
                             <td><span class="badge bg-primary">Pending</span></td>
+                            <td>Internal Medicine Consults</td>
                             <td>
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Action
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                                        
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-                                        <li><a class="dropdown-item" href="#">Pending</a></li>
                                         <li><a class="dropdown-item" href="#">Confirm</a></li>
                                         <li><a class="dropdown-item" href="#">Complete</a></li>
+                                        <li><a class="dropdown-item" href="#">Decline</a></li>
                                     </ul>
                                 </div>
                             </td>
@@ -306,17 +317,19 @@
                             <td>2024-06-26 03:54</td>
                             <td>OVAS-2024060006</td>
                             <td>Kim</td>
-                            <td><span class="badge bg-success">Confirm</span></td>
+                            <td>Dog</td>
+                            <td>Poodle</td>
+                            <td><span class="badge bg-success">Confirmed</span></td>
+                            <td>House Visit</td>
                             <td>
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Action
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+                                        
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-                                        <li><a class="dropdown-item" href="#">Pending</a></li>
                                         <li><a class="dropdown-item" href="#">Confirm</a></li>
                                         <li><a class="dropdown-item" href="#">Complete</a></li>
+                                        <li><a class="dropdown-item" href="#">Decline</a></li>
                                     </ul>
                                 </div>
                             </td>
@@ -326,17 +339,19 @@
                             <td>2024-06-26 00:56</td>
                             <td>OVAS-2024060005</td>
                             <td>Kim</td>
-                            <td><span class="badge bg-success">Confirm</span></td>
+                            <td>Cat</td>
+                            <td>Persian</td>
+                            <td><span class="badge bg-success">Confirmed</span></td>
+                            <td>Surgical Services</td>
                             <td>
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Action
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
+                                        
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
-                                        <li><a class="dropdown-item" href="#">Pending</a></li>
                                         <li><a class="dropdown-item" href="#">Confirm</a></li>
                                         <li><a class="dropdown-item" href="#">Complete</a></li>
+                                        <li><a class="dropdown-item" href="#">Decline</a></li>
                                     </ul>
                                 </div>
                             </td>
@@ -346,17 +361,19 @@
                             <td>2024-06-25 23:39</td>
                             <td>OVAS-2024060004</td>
                             <td>Racel Mae</td>
+                            <td>Dog</td>
+                            <td>Labrador Retriever</td>
                             <td><span class="badge bg-primary">Pending</span></td>
+                            <td>Pharmacy</td>
                             <td>
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Action
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false">
+                                        
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton7">
-                                        <li><a class="dropdown-item" href="#">Pending</a></li>
                                         <li><a class="dropdown-item" href="#">Confirm</a></li>
                                         <li><a class="dropdown-item" href="#">Complete</a></li>
+                                        <li><a class="dropdown-item" href="#">Decline</a></li>
                                     </ul>
                                 </div>
                             </td>
@@ -366,17 +383,19 @@
                             <td>2024-06-25 23:10</td>
                             <td>OVAS-2024060003</td>
                             <td>Anne</td>
+                            <td>Reptile</td>
+                            <td>Gecko</td>
                             <td><span class="badge bg-primary">Pending</span></td>
+                            <td>Boarding</td>
                             <td>
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton8" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Action
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton8" data-bs-toggle="dropdown" aria-expanded="false">
+                                        
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton8">
-                                        <li><a class="dropdown-item" href="#">Pending</a></li>
                                         <li><a class="dropdown-item" href="#">Confirm</a></li>
                                         <li><a class="dropdown-item" href="#">Complete</a></li>
+                                        <li><a class="dropdown-item" href="#">Decline</a></li>
                                     </ul>
                                 </div>
                             </td>
@@ -386,37 +405,19 @@
                             <td>2024-06-25 22:28</td>
                             <td>OVAS-2024060002</td>
                             <td>Anne</td>
+                            <td>Rabbit</td>
+                            <td>Angora</td>
                             <td><span class="badge bg-primary">Pending</span></td>
+                            <td>Pet Supplies</td>
                             <td>
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton9" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Action
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton9" data-bs-toggle="dropdown" aria-expanded="false">
+                                        
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton9">
-                                        <li><a class="dropdown-item" href="#">Pending</a></li>
                                         <li><a class="dropdown-item" href="#">Confirm</a></li>
                                         <li><a class="dropdown-item" href="#">Complete</a></li>
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>2024-06-25 22:28</td>
-                            <td>OVAS-2024060002</td>
-                            <td>Anne</td>
-                            <td><span class="badge bg-primary">Pending</span></td>
-                            <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton9" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Action
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton9">
-                                        <li><a class="dropdown-item" href="#">Pending</a></li>
-                                        <li><a class="dropdown-item" href="#">Confirm</a></li>
-                                        <li><a class="dropdown-item" href="#">Complete</a></li>
+                                        <li><a class="dropdown-item" href="#">Decline</a></li>
                                     </ul>
                                 </div>
                             </td>
@@ -426,23 +427,26 @@
                             <td>2024-06-25 22:02</td>
                             <td>OVAS-2024060001</td>
                             <td>Anne</td>
-                            <td><span class="badge bg-success">Confirm</span></td>
+                            <td>Dog</td>
+                            <td>Shih Tzu</td>
+                            <td><span class="badge bg-success">Confirmed</span></td>
+                            <td>Grooming</td>
                             <td>
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        id="dropdownMenuButton10" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Action
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton10" data-bs-toggle="dropdown" aria-expanded="false">
+                                        
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton10">
-                                        <li><a class="dropdown-item" href="#">Pending</a></li>
                                         <li><a class="dropdown-item" href="#">Confirm</a></li>
                                         <li><a class="dropdown-item" href="#">Complete</a></li>
+                                        <li><a class="dropdown-item" href="#">Decline</a></li>
                                     </ul>
                                 </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+                
             </div>
             <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-end" id="paginationControls">
