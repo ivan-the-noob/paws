@@ -75,6 +75,7 @@ body {
 .content {
     flex-grow: 1;
     background-color: #F5F6FA;
+    overflow-x: auto;
 }
 
 .header {
@@ -165,14 +166,13 @@ body {
 
 .app-req{
     padding: 10px 20px;
+    overflow-x: auto;
 }
 .app-req h3{
-    padding: 0 !important;
+    padding: 30px 0 0 20px !important;
+    color: #7A3015;
 }
 
-h3{
-    padding: 20px 30px; 
-}
 
 
 
@@ -194,18 +194,14 @@ tr:hover{
     background-color: #FFFFFF;
 }
 
-
-
 .table-wrapper{
-    padding: 0 60px;
-    
+    overflow-x: auto;
+
 }
 
 .pagination {
     display: flex !important;
     justify-content: center;
-    padding-right: 80px;
-    padding-top: 20px;
  
 }
 .pagination .page-item {
@@ -221,8 +217,8 @@ tr:hover{
 
 .walk-in{
     display: flex;
-    padding: 0 60px;  
     justify-content: space-between; 
+    gap: 10px;
 }
 .walk-in .search-bars{
     width: auto;
@@ -252,6 +248,20 @@ tr:hover{
     color: #000;
     padding: 5px;
 }
+.btn-new{
+    background-color: #7A3015 !important;
+    border: none !important;
+    color: #fff !important;
+    padding:  10px 20px !important;
+    border-radius: 10px !important;
+    display: flex !important;
+}
+.x{
+    display: grid;
+    justify-content: space-between !important;
+    gap: 10px;
+}
+
 .book-save{
     background-color: #7A3015 !important;
     border: none !important;

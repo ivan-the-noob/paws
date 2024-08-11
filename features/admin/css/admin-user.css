@@ -78,8 +78,6 @@ body {
     overflow-x: auto;
 }
 
-
-
 .header {
     display: flex;
     align-items: center;
@@ -145,6 +143,7 @@ body {
     font-size: 20px;
     display: flex;
     margin: auto;
+    
 }
 .profile-admin i {
     color: #7A3015;
@@ -164,58 +163,49 @@ body {
 }
 /*Navbar Section End*/
 
-
 .app-req{
     padding: 10px 20px;
-    overflow-x:  auto;
+    overflow-x: auto;
 }
 .app-req h3{
     padding: 30px 0 0 20px !important;
     color: #7A3015;
 }
 
-
-
-
-.table-remove-borders th,
-.table-remove-borders td {
-    border: none !important;
-    text-align: center;
-    
-}
-.table-remove-borders th{
-    background-color: #7A3015;
-    color: #fff;
-    text-align: center;
-
-}
-td button{
-    background-color: #7A3015;
-    color: #fff;
-    border: none;
-    margin: 2px;
-}
-
-td i{
-    color: #fff;
-    padding: 5px;
-}
-
-.table-remove-borders td{
-    background-color: #F1F5F9 !important;
-}
-
-tr:hover{
-    background-color: #FFFFFF;
-}
-
 .table-wrapper{
-    overflow-x: auto;   
+    overflow-x: auto;
+}
+
+
+  .table-remove-borders th,
+  .table-remove-borders td {
+      border: none !important;
+      text-align: center;
+      
+  }
+  .table-remove-borders th{
+      background-color: #7A3015;
+      color: #fff;
+  }
+  
+  .table-remove-borders td{
+      background-color: #F1F5F9 !important;
+  }
+  
+  tr:hover{
+      background-color: #FFFFFF;
+  }
+
+img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
 .pagination {
     display: flex !important;
     justify-content: center;
+ 
 }
 .pagination .page-item {
     margin: 0 5px;
@@ -233,6 +223,18 @@ tr:hover{
     background-color: transparent;
     font-size: 20px;
 }
+td button{
+    border: none;
+    background-color: #7A3015;
+    margin: 2px;
+}
+button i{
+    color: #fff;
+}
+td i{
+    color: #fff;
+    padding: 5px;
+}
 
 .btn-new{
     background-color: #7A3015 !important;
@@ -245,7 +247,6 @@ tr:hover{
 
 .walk-in{
     justify-content: space-between; 
-
 }
 .walk-in .search-bars{
     width: auto;
@@ -287,13 +288,11 @@ tr:hover{
     color: #fff;
     background-color: #000;
 }
-.search{
-    display: flex;
-}
+
 .x{
     display: grid;
     justify-content: space-between !important;
-    gap: 10px;
+    gap: 5px;
 }
 
 
