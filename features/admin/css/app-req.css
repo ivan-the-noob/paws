@@ -215,11 +215,7 @@ tr:hover{
     color: #007bff;
 }
 
-.walk-in{
-    display: flex;
-    justify-content: space-between; 
-    gap: 10px;
-}
+
 .walk-in .search-bars{
     width: auto;
 }
