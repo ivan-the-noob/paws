@@ -197,6 +197,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: 15px;
+    position: relative;
 }
 
 .card-title {
@@ -249,6 +250,32 @@
     justify-content: start;
     font-size: 1rem;
     margin-top: 4px;
+}
+
+.discount-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #7A3015;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 80px;
+  height: 80px;
+  display: flex;
+
+  z-index: 2;
+}
+
+.discount-label p{
+  z-index: 3;
+  color: #fff;
+  position: relative;
+  left: 40px;
+  top: 10px;
+  width: 50%;
 }
 
 @keyframes slideUp {
