@@ -21,6 +21,7 @@ body {
     align-items: start;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    min-width: 230px;
 }
 .navbar a {
     color: #000;
@@ -163,11 +164,16 @@ body {
 /*Appointment Request Section*/
 
 .app-req{
-    padding: 20px;
+    padding: 10px 20px;
 }
+.app-req h3{
+    padding: 0 !important;
+}
+
 h3{
     padding: 20px 30px; 
 }
+
 
 
 .table-remove-borders th,
@@ -190,8 +196,9 @@ tr:hover{
 
 
 
-.table-responsive{
+.table-wrapper{
     padding: 0 60px;
+    
 }
 
 .pagination {
@@ -199,9 +206,11 @@ tr:hover{
     justify-content: center;
     padding-right: 80px;
     padding-top: 20px;
+ 
 }
 .pagination .page-item {
     margin: 0 5px;
+    display: flex;
 }
 .pagination .page-link {
     color: #000;
@@ -212,9 +221,13 @@ tr:hover{
 
 .walk-in{
     display: flex;
-    justify-content: space-between;
-    padding: 0 60px;
+    padding: 0 60px;  
+    justify-content: space-between; 
 }
+.walk-in .search-bars{
+    width: auto;
+}
+
 
 .search-bars {
     flex-grow: 1;
@@ -239,11 +252,38 @@ tr:hover{
     color: #000;
     padding: 5px;
 }
+.book-save{
+    background-color: #7A3015 !important;
+    border: none !important;
+    color: #fff !important;
+    padding:  10px 20px !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    margin: auto !important
+}
+.modal-dialog{
+    max-width: 80%;
+}
+@media (max-width: 768px) {
+    .modal-dialog {
+        max-width: 80%;
+        display: flex;
+        margin: auto;
+    }
+}
 
+
+.dropdown-toggle {
+    white-space: wrap;
+}
+
+.medical-services a{
+    word-break: break-word;
+}
 
 .modal-body label{
     color: #7A3015;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
 }
 .modal-body h6{
@@ -259,6 +299,9 @@ tr:hover{
     padding: 0;
 }
 
+.contacts input{
+    margin: 5px;
+}
 
 .modal-body .sched p{
     font-size: 20px;
@@ -274,15 +317,28 @@ tr:hover{
 
 .dropdown-menu{
     padding: 0;
+    background-color: #7A3015 !important;
+    color: #fff !important;
 }
 .dropdown-menu li{
     text-align: center;
 }
 
-ul{
-    background-color: #7A3015 !important;
+.m{
     color: #fff !important;
+    text-align: center;
 }
+
+
+
+.m:hover{
+    background-color: #fff !important;
+    color: #7A3015 !important;
+    padding: 0 !important;
+
+}
+
+
 
 
 ul a{
@@ -321,7 +377,10 @@ ul a:hover{
     align-items: center; 
     border: none;
 }
-
+.pagination li a:hover{
+    background-color: #af5433 !important;
+    color: #fff !important;
+}
 .pagination .page-item.active .page-link {
     background-color: #5a220d;
     border-color: #5a220d;

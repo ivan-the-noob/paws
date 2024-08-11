@@ -82,7 +82,9 @@
 .booked-history button:hover{
     background-color: #5a220d;
 }
-
+.dm{
+    white-space: wrap !important;
+}
 .modal-dialog{
     max-width: 70%;
 }

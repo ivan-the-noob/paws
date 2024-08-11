@@ -161,106 +161,163 @@ body {
 }
 /*Navbar Section End*/
 
-/*Dashboard Section*/
-.dashboard{
-    padding: 20px;
 
+.app-req{
+    padding: 10px 20px;
 }
-.dashboard h3{
-    padding:  20px 30px;
+.app-req h3{
+    padding: 0 !important;
 }
 
-.card-box {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 40px;
-   
+h3{
+    padding: 20px 30px; 
+}
+
+
+.table-remove-borders th,
+.table-remove-borders td {
+    border: none !important;
+    text-align: center;
     
 }
-.cc{
-    padding: 0;
+.table-remove-borders th{
+    background-color: #7A3015;
+    color: #fff;
+    text-align: center;
+
 }
-.card {
-    flex: 1;
-    margin: 0 10px;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #cabebe;
-    display: flex;
-    margin-top: 8px;
-   
-}
-.card h5 {
-    margin-bottom: 10px;
-}
-.card p {
-    margin: 0;
-}
-.card .icon {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-.card .trend {
-    display: flex;
-    align-items: center;
-    font-size: 0.8rem;
+td button{
+    background-color: #7A3015;
+    color: #fff;
+    border: none;
 }
 
-.card p{
-    font-size: 14px !important;
+td i{
+    color: #fff;
+    padding: 5px;
 }
 
-.card h5{
-    padding: 10px 0;
-}
-.card .trend i {
-    margin-right: 5px;
-    font-size: 12px;
-}
-.card-up i {
-    color: green;
-}
-.card-down i {
-    color: red;
-}
-.cards{
-    display: flex;
-    justify-content: space-between;
+.table-remove-borders td{
+    background-color: #F1F5F9 !important;
 }
 
-.cards i{
-    font-size: 30px;
-    color: #7A3015;
-    padding:  8px 0px;
+tr:hover{
+    background-color: #FFFFFF;
 }
 
-.flex-container{
-    display: flex;
-    padding: 0 20px;
-    flex-wrap: wrap;
+
+
+.table-wrapper{
+    padding: 0 60px;
+    
+}
+
+.pagination {
+    display: flex !important;
+    justify-content: center;
+    padding-right: 80px;
+    padding-top: 20px;
  
 }
-
-.chart-container {
-    margin-top: 50px !important;
-    padding: 20px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    width: 48%;
+.pagination .page-item {
+    margin: 0 5px;
     display: flex;
-    margin: auto;
-    border: 1px solid #cabebe;
-    
+}
+.pagination .page-link {
+    color: #000;
+}
+.pagination .page-link:hover {
+    color: #007bff;
 }
 
-@media (max-width: 768px) {
-    .chart-container {
-        width: 100%;
-        display: block; 
-      
-        padding: 0;
-    }
+.modal-header button{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.btn-new{
+    background-color: #7A3015 !important;
+    border: none !important;
+    color: #fff !important;
+    padding:  10px 20px !important;
+    border-radius: 10px !important;
+    display: flex !important;
+}
+
+.walk-in{
+    padding: 0 60px;  
+    justify-content: space-between; 
+}
+.walk-in .search-bars{
+    width: auto;
 }
 
 
-/*Dashboard Section End*/
+.search-bars {
+    flex-grow: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+.search-bars input {
+    height: 6vh;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding-left: 40px; 
+}
+
+.search-bars i {
+    position: absolute;
+    left: 10px; 
+    font-size: 18px;
+    color: #000;
+    padding: 5px;
+}
+
+
+
+.dropdown-toggle {
+    white-space: wrap;
+}
+
+
+tr:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+.x{
+    display: grid;
+    justify-content: space-between !important;
+}
+
+
+
+.pagination .page-item .page-link {
+    border-radius: 50%;
+    background-color: #7A3015;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: none;
+}
+.pagination li a:hover{
+    background-color: #af5433 !important;
+    color: #fff !important;
+}
+.pagination .page-item.active .page-link {
+    background-color: #5a220d;
+    border-color: #5a220d;
+}
+
+.pagination .page-item .page-link:hover {
+    background-color: #5a220d;
+    color: white;
+}
