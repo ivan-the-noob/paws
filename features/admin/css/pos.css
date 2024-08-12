@@ -230,6 +230,10 @@ h5{
 .total{
     color: #7A3015;
 }
+.dropdown button{
+    align-items: center;
+}
+
 
 
 

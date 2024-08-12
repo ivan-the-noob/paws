@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var lastMonthDataset = [20, 30, 40, 50, 30, 70, 50, 40, 45, 35, 55, 60];
 
     var chartData = {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+        labels: ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
         datasets: [
             {
                 label: 'Current Month Sales',

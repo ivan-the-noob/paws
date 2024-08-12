@@ -321,3 +321,7 @@ tr:hover{
     background-color: #5a220d;
     color: white;
 }
+
+.dropdown button{
+    align-items: center;
+}

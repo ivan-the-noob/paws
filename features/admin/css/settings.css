@@ -197,8 +197,10 @@ input, textarea{
     color: #fff;
     padding: 10px;
     border-radius: 5px;
-  
+}
 
+.dropdown button{
+    align-items: center;
 }
 
 

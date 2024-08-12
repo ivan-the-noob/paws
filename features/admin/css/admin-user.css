@@ -325,3 +325,7 @@ tr:hover{
 .form-group{
     margin: 5px;
 }
+
+.dropdown button{
+    align-items: center;
+}

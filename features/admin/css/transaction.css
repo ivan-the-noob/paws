@@ -258,5 +258,9 @@ input, textarea{
 
 /*Pagination Section End*/
 
+.dropdown button{
+    align-items: center;
+}
+
 
 
