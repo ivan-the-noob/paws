@@ -89,6 +89,12 @@ input{
     border: none;
 }
 
+.login{
+    color: #7A3015;
+    display: flex;
+    justify-content: center;
+}
+
 .login-right button:hover{
     background-color: #f7f6f6;
     color: #7A3015;
