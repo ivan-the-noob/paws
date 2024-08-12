@@ -21,6 +21,10 @@
     
 }
 
+
+.dropdown button{
+    background-color: #7A3015 !important;
+}
 .bold{
     font-weight: bold;
 }
@@ -135,6 +139,8 @@
     color: #7A3015;
     font-size: 30px;
 }
+
+
 
 .booked-history .container{
     padding: 0;
@@ -372,6 +378,9 @@
 .dropdown a{
     color: #7A3015;
     
+}
+.dropdowns button{
+    border: 1px solid #ddd !important;
 }
 .dropdown-toggle {
     white-space: normal;
