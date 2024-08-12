@@ -54,6 +54,7 @@
                     <span>Settings</span>
                 </a>
             </div>
+           
         </div>
     </div>
     <div class="content flex-grow-1">
@@ -67,6 +68,7 @@
             </button>
            
             <div class="profile-admin">
+
                 <div class="dropdown">
                     <button class="" type="button" id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fas fa-bell"></i>
@@ -103,7 +105,7 @@
                     </ul>
                 </div>
                 <div class="dropdown">
-                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="../../../../assets/img/vet logo.jpg" style="width: 40px; height: 40px; object-fit: cover;">
                     </button>
                     <ul class="dropdown-menu" style="background-color: transparent;">
@@ -122,8 +124,8 @@
                             <input type="text" class="form-control" placeholder="Search...">
                         </div>
                     </div>
-                    <button type="button" class="btn-new" data-toggle="modal" data-target="#addCategoryModal">
-                        Add new
+                    <button type="button" class="btn-new" data-bs-toggle="modal" data-bs-target="#walkInModal">
+                        Add Patient Record 
                     </button>
                 </div>
             </div>
@@ -132,7 +134,7 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="walkInModalLabel">Walk In Appointment</h5>
+                            <h5 class="modal-title" id="walkInModalLabel">Add Patient Record </h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -413,10 +415,8 @@
 </body>
 
        
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" crossorigin="anonymous">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 <script src="../../function/script/toggle-menu.js"></script>
 <script src="../../function/script/pagination.js"></script>
 <script src="../../function/script/drop-down.js"></script>

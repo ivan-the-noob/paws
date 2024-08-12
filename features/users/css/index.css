@@ -754,6 +754,29 @@
 
 /*Chat Bot End*/
 
+/*Notif Section*/
+
+.dropdown-menu-center{
+  width: 300px;
+  overflow-y: auto;
+  height: 70vh;
+}
+
+.dropdown-item p{
+  margin: 0;
+}
+
+
+.alert {
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+
+
 
 
 
