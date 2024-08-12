@@ -61,7 +61,6 @@
   border: none !important;
   background-color: transparent !important;
 }
-
 .btn-theme{
     background-color: #7A3015;
     color: #fff !important;
@@ -432,6 +431,22 @@
   border-radius: 10px;
     
 }
+input{
+  border: 2px solid #7A3015 !important;
+}
 
 /*Chat Bot End*/
+
+.dash-button{
+  display: grid;
+  margin: auto;
+  justify-content: center;
+}
+
+.dash-button button{
+  margin: 5px;
+  width: 100%;
+
+  
+}
 

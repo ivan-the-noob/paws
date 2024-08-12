@@ -82,6 +82,9 @@
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/features/users/web/api/appointment.html" onclick="localStorage.setItem('showBookedHistory', 'true');">My Appointment</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#about-us">About Us</a>
           </li>
           <li class="nav-item">
@@ -90,10 +93,17 @@
         </ul>
 
         <div class="d-flex ml-auto">
-          <a href="/features/users/web/api/login.html" class="btn-theme" type="button">Login</a>
-        </div>
+          <div class="dropdown">
+              <button class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="/assets/img/customer.jfif" alt="" class="profile">
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="/features/users/web/api/dashboard.html">Profile</a>
+                  <a class="dropdown-item" href="/features/users/web/api/login.html">Logout</a>
+              </div>
       </div>
-    </div>
+        </div>
+
   </nav>
 
   <section class="front py-5 relative-container">
@@ -110,7 +120,7 @@
           <h4>Book Your Pet's Next Appointment with Ease!</h4>
           <p>Welcome to <span class="vets-name">Bark Yard Pet Wellness Center</span>, your one-stop destination for pet
             grooming and care.</p>
-          <a href="/features/users/web/api/login.html"><button class="btn btn-primary">Book an
+          <a href="/features/users/web/api/appointment.html"><button class="btn btn-primary">Book an
               appointment</button></a>
         </div>
       </div>
