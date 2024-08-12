@@ -72,11 +72,6 @@ body {
     flex-direction: column;
     width: 100%;
 }
-.content {
-    flex-grow: 1;
-    background-color: #F5F6FA;
-    overflow-x: auto;
-}
 
 .header {
     display: flex;
@@ -101,29 +96,7 @@ body {
     cursor: pointer;
     padding: 0;
 }
-.search-bar {
-    flex-grow: 1;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    position: relative;
-}
 
-.search-bar input {
-    height: 6vh;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding-left: 40px; 
-}
-
-.search-bar i {
-    position: absolute;
-    left: 10px; 
-    font-size: 18px;
-    color: #000;
-    padding: 5px;
-}
 .profile-admin {
     display: flex;
     align-items: center;
@@ -143,7 +116,6 @@ body {
     font-size: 20px;
     display: flex;
     margin: auto;
-    
 }
 .profile-admin i {
     color: #7A3015;
@@ -163,96 +135,48 @@ body {
 }
 /*Navbar Section End*/
 
+
 .app-req{
     padding: 10px 20px;
-    overflow-x: auto;
+    overflow-x:  auto;
+    background-color: #F5F6FA;
 }
 .app-req h3{
     padding: 30px 0 0 20px !important;
     color: #7A3015;
 }
 
-.table-wrapper{
-    overflow-x: auto;
-}
-
-
-  .table-remove-borders th,
-  .table-remove-borders td {
-      border: none !important;
-      text-align: center;
-      
-  }
-  .table-remove-borders th{
-      background-color: #7A3015;
-      color: #fff;
-  }
-  
-  .table-remove-borders td{
-      background-color: #F1F5F9 !important;
-  }
-  
-  tr:hover{
-      background-color: #FFFFFF;
-  }
-
-img{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-
-.pagination {
-    display: flex !important;
+.contents{
+    display: grid;
     justify-content: center;
- 
-}
-.pagination .page-item {
-    margin: 0 5px;
-    display: flex;
-}
-.pagination .page-link {
-    color: #000;
-}
-.pagination .page-link:hover {
-    color: #007bff;
+    margin-top: 20px;
 }
 
-.modal-header button{
-    border: none;
-    background-color: transparent;
-    font-size: 20px;
+.contents label{
+    color: #7A3015;
+    font-size: 16px;
 }
-td button{
+
+input, textarea{
+    padding: 10px !important;
+    border: 2x solid #7A3015 !important;
+    border-radius: 5px !important;
+}
+
+.update{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.update button{
     border: none;
     background-color: #7A3015;
-    margin: 2px;
-}
-button i{
     color: #fff;
-}
-td i{
-    color: #fff;
-    padding: 5px;
-}
+    padding: 10px;
+    border-radius: 5px;
 
-.btn-new{
-    background-color: #7A3015 !important;
-    border: none !important;
-    color: #fff !important;
-    padding:  10px 20px !important;
-    border-radius: 10px !important;
-    display: flex !important;
 }
-
-.walk-in{
-    justify-content: space-between; 
-}
-.walk-in .search-bars{
-    width: auto;
-}
-
-
 .search-bars {
     flex-grow: 1;
     display: flex;
@@ -266,7 +190,8 @@ td i{
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 20px;
-    padding-left: 40px; 
+    padding-left: 40px !important; 
+    border-radius: 20px !important;
 }
 
 .search-bars i {
@@ -277,26 +202,33 @@ td i{
     padding: 5px;
 }
 
+/*Card Section*/
 
-
-.dropdown-toggle {
-    white-space: wrap;
+.card{
+    color: #7A3015;
+    border: 2px solid #7A3015;
+    background-color: #FFFFFF;
 }
-
-
-tr:hover{
+.paid{
+    background-color: green !important;
+}
+.buttons{
+    margin-top: 20px;
+}
+.buttons button{
+    background-color: #7A3015;
+    border: none;
     color: #fff;
-    background-color: #000;
-}
-
-.x{
-    display: grid;
-    justify-content: space-between !important;
-    gap: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;   
 }
 
 
 
+/*Card Section End*/
+
+/*Pagination Section*/
 .pagination .page-item .page-link {
     border-radius: 50%;
     background-color: #7A3015;
@@ -307,10 +239,12 @@ tr:hover{
     justify-content: center;
     align-items: center; 
     border: none;
+
 }
 .pagination li a:hover{
     background-color: #af5433 !important;
     color: #fff !important;
+
 }
 .pagination .page-item.active .page-link {
     background-color: #5a220d;
@@ -322,10 +256,11 @@ tr:hover{
     color: white;
 }
 
-.form-group{
-    margin: 5px;
-}
+/*Pagination Section End*/
 
 .dropdown button{
     align-items: center;
 }
+
+
+
