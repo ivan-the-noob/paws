@@ -413,3 +413,32 @@ ul a:hover{
     background-color: #fff !important;
 }
 
+/*Notif Section*/
+
+.dropdown-menu-end{
+    width: 300px;
+    overflow-y: auto;
+    height: 70vh;
+}
+
+.dropdown-item a{
+    text-decoration: none !important;
+
+}
+.dropdown-item a:hover{
+    background-color: transparent !important;
+
+
+}
+
+.dropdown-item p{
+    margin: 0;
+}
+
+
+.alert {
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
