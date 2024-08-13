@@ -267,6 +267,7 @@ tr:hover{
     color: #fff !important;
     padding:  10px 20px !important;
     border-radius: 10px !important;
+    display: flex !important;
 }
 .modal-dialog{
     max-width: 80%;
@@ -288,29 +289,27 @@ tr:hover{
     word-break: break-word;
 }
 
-.modal-body label{
+.container label{
     color: #7A3015;
     font-size: 16px;
     font-weight: 500;
 }
-.modal-body h6{
+.container h6{
     color:#7A3015;
     font-size: 22px;
 }
 
-.modal-body p{
+.container p{
     color: #7A3015;
 }
 
-#dayModal .container{
-    padding: 0;
-}
+
 
 .contacts input{
     margin: 5px;
 }
 
-.modal-body .sched p{
+.sched p{
     font-size: 20px;
     font-weight: 400;
     padding: 0;
@@ -369,69 +368,3 @@ ul a:hover{
 }
 
 /*Appointment Request End*/
-
-
-.pagination .page-item .page-link {
-    border-radius: 50%;
-    background-color: #7A3015;
-    color: white;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    border: none;
-}
-.pagination li a:hover{
-    background-color: #af5433 !important;
-    color: #fff !important;
-}
-.pagination .page-item.active .page-link {
-    background-color: #5a220d;
-    border-color: #5a220d;
-}
-
-.pagination .page-item .page-link:hover {
-    background-color: #5a220d;
-    color: white;
-}
-
-.dropdown button{
-    align-items: center;
-}
-
-
-
-.dropdown menu li{
-    background-color: #fff !important;
-}
-
-/*Notif Section*/
-
-.dropdown-menu-end{
-    width: 300px;
-    overflow-y: auto;
-    height: 70vh;
-}
-
-.dropdown-item a{
-    text-decoration: none !important;
-
-}
-.dropdown-item a:hover{
-    background-color: transparent !important;
-
-
-}
-
-.dropdown-item p{
-    margin: 0;
-}
-
-
-.alert {
-    white-space: wrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
