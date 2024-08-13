@@ -38,7 +38,28 @@
           </li>
         </ul>
 
-        <div class="d-flex ml-auto">
+        <div class="d-flex ml-auto align-items-center">
+          <div class="dropdown first-dropdown">
+            <button class="" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <h5 class="notification-title">Notification</h5>
+                <div class="notification-content alert-primary">
+                    <strong>Successfully Booked!</strong>
+                    <p class="notification-text">You successfully booked!</p>
+                    <p class="code">Code:   OVAS-01234</p>
+                </div>
+                <div class="notification-content alert-danger">
+                  <strong>Rejected</strong>
+                  <p class="notification-text">Your appointment has been rejected.</p>
+              </div>
+              <div class="notification-content alert alert-success">
+                <strong>Appointment Confirmed!</strong>
+                <p class="notification-text">Your appointment has been confirmed! <a href="/features/users/web/api/appointment.html" onclick="localStorage.setItem('showBookedHistory', 'true');"">View Details</a></p>
+            </div>
+          </div>
+        </div>
           <div class="dropdown">
               <button class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src="../../../../assets/img/customer.jfif" alt="" class="profile">
