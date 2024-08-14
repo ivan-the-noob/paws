@@ -105,9 +105,9 @@
         <div class="app-req">
             <h3>Patients Records</h3>
             <div class="container px-5 pt-3">
-                <div class="row">
+                <div class="row justify-content-center">
                     <!-- Client Information -->
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                       <h6>Client Information</h6>
                       <div class="mb-3">
                         <label for="ownerName" class="form-label">Client Name</label>
@@ -160,7 +160,7 @@
                       </div>
                     </div>         
                     <!-- Pet Information -->
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                       <h6>Pet Information</h6>
                       <div class="mb-3">
                         <label for="pet-name" class="form-label">Pet's Name</label>
@@ -204,56 +204,10 @@
                         <label for="age" class="form-label">Age</label>
                         <input type="number" class="form-control" placeholder="Months" id="age">
                       </div>  
-                    </div> 
-                      <!-- Services (Nested inside Pet Information) -->
-                    <div class="col-md-4 med">
-                      <h6>Services</h6>
                       <div class="mb-3">
-                        <label for="serviceCategory" class="form-label">Service Category</label>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="serviceCategoryDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Select Category
-                            </button>
-                            <div class="dropdown-menu co" aria-labelledby="serviceCategoryDropdown">
-                                <a class="dropdown-item m" href="#" data-value="medical">Medical</a>
-                                <a class="dropdown-item m" href="#" data-value="nonMedical">Non-Medical</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="service" class="form-label">Service</label>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="serviceDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Select Service
-                            </button>
-                            <div class="dropdown-menu dm" aria-labelledby="serviceDropdown">
-                                <!-- Medical Services -->
-                                <div class="medical-services" style="display: none;">
-                                    <a class="dropdown-item m" href="#" data-value="1200.00">Diagnostic and Therapeutic - ₱1200.00</a>
-                                    <a class="dropdown-item m" href="#" data-value="850.00">Preventive Health Care - ₱850.00</a>
-                                    <a class="dropdown-item m" href="#" data-value="1500.00">Internal Medicine Consults - ₱1500.00</a>
-                                    <a class="dropdown-item m" href="#" data-value="2500.00">Surgical Services - ₱2500.00</a>
-                                    <a class="dropdown-item m" href="#" data-value="300.00">Pharmacy - ₱300.00</a>
-                                    <a class="dropdown-item m" href="#" data-value="500.00">House Visit - ₱500.00</a>
-                                </div>
-                                <!-- Non-Medical Services -->
-                                <div class="nonMedical-services" style="display: none;">
-                                    <a class="dropdown-item m" href="#" data-value="999.00">Grooming - ₱999.00</a>
-                                    <a class="dropdown-item m" href="#" data-value="700.00">Boarding - ₱700.00</a>
-                                    <a class="dropdown-item m" href="#" data-value="300.00">Pet Supplies - ₱300.00</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                      <div class="mt-3">
-                        <label for="totalPayment" class="form-label">Total Payment</label>
-                        <p id="totalPayment">₱0.00</p>
+                        <button class="book-save mx-auto">Save</button>
                       </div>
-                      <div class="mt-3">
-                        <button class="book-save">Book Appointment</button>
-                      </div>
-                    </div>
+                    </div>     
                     </div>
                   </div>
             </div>
