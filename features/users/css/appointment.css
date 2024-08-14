@@ -100,11 +100,11 @@
 .dm{
     white-space: wrap !important;
 }
-.modal-dialog{
+ #info{
     max-width: 70%;
 }
 @media (max-width: 768px) {
-    .modal-dialog {
+    #info {
         max-width: 80%;
         display: flex;
         margin: auto;
