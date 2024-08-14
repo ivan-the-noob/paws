@@ -139,122 +139,157 @@
             </div>
           
            
-            <!--Record Table List-->
-            <div class="table-wrapper px-lg-5" style="overflow-x: auto;">
-                <table class="table table-hover table-remove-borders">
-                    <thead class="thead-light">
-                        <tr>
-                            <th>#</th>
-                            <th>Name</th>
-                            <th>Address</th>
-                            <th>Contact</th>
-                            <th>Home</th>
-                            <th>Work</th>
-                            <th>Email</th>
-                            <th>Preferred</th>
-                            <th>Pet's Name</th>
-                            <th>Species</th>
-                            <th>Sex</th>
-                            <th>Breed</th>
-                            <th>Colors & Marking</th>
-                            <th>Microchip No.</th>
-                            <th>Date of Birth</th>
-                            <th>Age</th>
-                            <th>Category</th>
-                            <th>Services</th>
-                            <th>Total Payment</th>                        
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody">
-                        <tr class="test-hover">
-                            <td>1</td>
-                            <td>Kim</td>
-                            <td>Manila</td>
-                            <td>09123456789</td>
-                            <td>09123456789</td>
-                            <td>09123456789</td>
-                            <td>kim@gmail.com</td>
-                            <td>Mobile</td>
-                            <td>Garfield</td>
-                            <td>Dog</td>
-                            <td>Male</td>
-                            <td>Golden Retriever</td>
-                            <td>Golden, Orange</td>
-                            <td>123456789</td>
-                            <td>2015-08-10</td>
-                            <td>9</td>
-                            <td>Non-Medical</td>
-                            <td>Grooming</td>
-                            <td>₱999.00</td>
-                        </tr>   
-                        <tr class="test-hover">
-                            <td>2</td>
-                            <td>Kim</td>
-                            <td>Manila</td>
-                            <td>09123456789</td>
-                            <td>09123456789</td>
-                            <td>09123456789</td>
-                            <td>kim@gmail.com</td>
-                            <td>Mobile</td>
-                            <td>Garfield</td>
-                            <td>Dog</td>
-                            <td>Male</td>
-                            <td>Golden Retriever</td>
-                            <td>Golden, Orange</td>
-                            <td>123456789</td>
-                            <td>2015-08-10</td>
-                            <td>9</td>
-                            <td>Non-Medical</td>
-                            <td>Grooming</td>
-                            <td>₱999.00</td>
-                        </tr>   
-                        <tr class="test-hover">
-                            <td>3</td>
-                            <td>Kim</td>
-                            <td>Manila</td>
-                            <td>09123456789</td>
-                            <td>09123456789</td>
-                            <td>09123456789</td>
-                            <td>kim@gmail.com</td>
-                            <td>Mobile</td>
-                            <td>Garfield</td>
-                            <td>Dog</td>
-                            <td>Male</td>
-                            <td>Golden Retriever</td>
-                            <td>Golden, Orange</td>
-                            <td>123456789</td>
-                            <td>2015-08-10</td>
-                            <td>9</td>
-                            <td>Non-Medical</td>
-                            <td>Grooming</td>
-                            <td>₱999.00</td>
-                        </tr>                       
-                        <tr class="test-hover">
-                            <td>4</td>
-                            <td>Kim</td>
-                            <td>Manila</td>
-                            <td>09123456789</td>
-                            <td>09123456789</td>
-                            <td>09123456789</td>
-                            <td>kim@gmail.com</td>
-                            <td>Mobile</td>
-                            <td>Garfield</td>
-                            <td>Dog</td>
-                            <td>Male</td>
-                            <td>Golden Retriever</td>
-                            <td>Golden, Orange</td>
-                            <td>123456789</td>
-                            <td>2015-08-10</td>
-                            <td>9</td>
-                            <td>Non-Medical</td>
-                            <td>Grooming</td>
-                            <td>₱999.00</td>
-                        </tr>   
-                       
-                    </tbody>
-                </table>
-            </div>
-             <!--Record Table List End-->
+            <!--Record Card List--> 
+            <div class="container ">
+                <div class="row px-lg-5">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Kim Louremae</h5>
+                                <button type="button" class="view" data-toggle="modal" data-target="#modal1">
+                                    View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Kim Louremae</h5>
+                                <button type="button" class="view" data-toggle="modal" data-target="#modal2">
+                                    View
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-between">
+                                    <h5 class="modal-title" id="modalLabel1">Details for Kim</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <!-- First Column -->
+                                        <div class="col-md-3">
+                                            <h6>Client Information</h6>
+                                            <p><strong>Name:</strong> Kim Louramae</p>
+                                            <p><strong>Address:</strong> Manila</p>
+                                            <p><strong>Contact:</strong> 09123456789</p>
+                                            <p><strong>Home:</strong> 09123456789</p>
+                                            <p><strong>Work:</strong> 09123456789</p>
+                                            <p><strong>Email:</strong> kim@gmail.com</p>
+                                            <p><strong>Preferred:</strong> Mobile</p>
+                                        </div>
+                                        
+                                        <!-- Second Column -->
+                                        <div class="col-md-3">
+                                            <h6>Pet Information</h6>
+                                            <p><strong>Pet's Name:</strong> Garfield</p>
+                                            <p><strong>Species:</strong> Dog</p>
+                                            <p><strong>Sex:</strong> Male</p>
+                                            <p><strong>Breed:</strong> Golden Retriever</p>
+                                            <p><strong>Colors & Marking:</strong> Golden, Orange</p>
+                                            <p><strong>Microchip No.:</strong> 123456789</p>
+                                            <p><strong>Date of Birth:</strong> 2015-08-10</p>
+                                            <p><strong>Age:</strong> 9</p>
+                                        </div>
+                                        
+                                        <!-- Third Column -->
+                                        <div class="col-md-3">
+                                            <h6>Services</h6>
+                                            <p><strong>Category:</strong> Non-Medical</p>
+                                            <p><strong>Services:</strong> Grooming</p>
+                                            <p><strong>Total Payment:</strong> ₱999.00</p>
+                                        </div>
+                                        <!--4th Column-->
+                                        <div class="col-md-3">
+                                            <h6>Other Information</h6>
+                                            <p><strong>Date:</strong> August 13, 2024</p>
+                                            <p><strong>Authorization for Treatment:</strong> Yes</p>
+                                            <p><strong>Veterinarian's Report:</strong><br> 
+                                               The pet was brought in for routine grooming. No significant health issues were observed.
+                                            </p>
+                                            <p><strong>History • Physical Findings • Diagnosis • Treatment:</strong><br>
+                                               The pet has a history of skin allergies, but no active symptoms were noted during this visit. The pet was treated for fleas as a precautionary measure.
+                                            </p>
+                                            <div class="mb-3">
+                                                <button class="save">Save</button>
+                                            </div>
+                                        </div>                                 
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-between">
+                                    <h5 class="modal-title" id="modalLabel1">Details for Kim</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <!-- First Column -->
+                                        <div class="col-md-3">
+                                            <h6>Client Information</h6>
+                                            <p><strong>Name:</strong> Kim Louramae</p>
+                                            <p><strong>Address:</strong> Manila</p>
+                                            <p><strong>Contact:</strong> 09123456789</p>
+                                            <p><strong>Home:</strong> 09123456789</p>
+                                            <p><strong>Work:</strong> 09123456789</p>
+                                            <p><strong>Email:</strong> kim@gmail.com</p>
+                                            <p><strong>Preferred:</strong> Mobile</p>
+                                        </div>
+                                        
+                                        <!-- Second Column -->
+                                        <div class="col-md-3">
+                                            <h6>Pet Information</h6>
+                                            <p><strong>Pet's Name:</strong> Garfield</p>
+                                            <p><strong>Species:</strong> Dog</p>
+                                            <p><strong>Sex:</strong> Male</p>
+                                            <p><strong>Breed:</strong> Golden Retriever</p>
+                                            <p><strong>Colors & Marking:</strong> Golden, Orange</p>
+                                            <p><strong>Microchip No.:</strong> 123456789</p>
+                                            <p><strong>Date of Birth:</strong> 2015-08-10</p>
+                                            <p><strong>Age:</strong> 9</p>
+                                        </div>
+                                        
+                                        <!-- Third Column -->
+                                        <div class="col-md-3">
+                                            <h6>Services</h6>
+                                            <p><strong>Category:</strong> Non-Medical</p>
+                                            <p><strong>Services:</strong> Grooming</p>
+                                            <p><strong>Total Payment:</strong> ₱999.00</p>
+                                        </div>
+                                        <!--4th Column-->
+                                        <div class="col-md-3">
+                                            <h6>Other Information</h6>
+                                            <p><strong>Date:</strong> August 13, 2024</p>
+                                            <p><strong>Authorization for Treatment:</strong> Yes</p>
+                                            <p><strong>Veterinarian's Report:</strong><br> 
+                                               The pet was brought in for routine grooming. No significant health issues were observed.
+                                            </p>
+                                            <p><strong>History • Physical Findings • Diagnosis • Treatment:</strong><br>
+                                               The pet has a history of skin allergies, but no active symptoms were noted during this visit. The pet was treated for fleas as a precautionary measure.
+                                            </p>
+                                            <div class="mb-3">
+                                                <button class="save">Save</button>
+                                            </div>
+                                        </div>                                 
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>           
 
              <!--Page number-->
             <ul class="pagination justify-content-end mt-3 px-lg-5" id="paginationControls">
