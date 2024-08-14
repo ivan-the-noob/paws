@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!--Navigation Links-->
     <div class="navbar flex-column bg-white shadow-sm p-3 collapse d-md-flex" id="navbar">
         <div class="navbar-links">
             <a class="navbar-brand d-none d-md-block logo-container" href="#">
@@ -64,6 +65,7 @@
             </div>
         </div>
     </div>
+    <!--Navigation Links End-->
     <div class="content flex-grow-1">
         <div class="header">
             <button class="navbar-toggler d-block d-md-none" type="button" onclick="toggleMenu()">
@@ -73,7 +75,7 @@
                     </path>
                 </svg>
             </button>
-           
+            <!--Notification and Profile Admin-->
             <div class="profile-admin">
                 <div class="dropdown">
                     <button class="" type="button" id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -120,6 +122,8 @@
                 </div>
             </div>
         </div>
+         <!--Notification and Profile Admin End-->
+
         <div class="app-req">
             <h3>Record List</h3>
             <div class="walk-in px-lg-5">
@@ -135,7 +139,7 @@
             </div>
           
            
-
+            <!--Record Table List-->
             <div class="table-wrapper px-lg-5" style="overflow-x: auto;">
                 <table class="table table-hover table-remove-borders">
                     <thead class="thead-light">
@@ -250,7 +254,9 @@
                     </tbody>
                 </table>
             </div>
-            
+             <!--Record Table List End-->
+
+             <!--Page number-->
             <ul class="pagination justify-content-end mt-3 px-lg-5" id="paginationControls">
                 <li class="page-item">
                     <a class="page-link" href="#" data-page="prev"><</a>
@@ -260,6 +266,7 @@
                     <a class="page-link" href="#" data-page="next">></a>
                 </li>
             </ul>
+              <!--Page number End-->
             
              </div>
 </body>
