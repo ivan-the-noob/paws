@@ -182,6 +182,8 @@ body {
 .table-remove-borders th,
 .table-remove-borders td {
     border: none !important;
+    white-space: nowrap;
+    text-align: center;
     
 }
 .table-remove-borders th{
