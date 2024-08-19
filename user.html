@@ -11,8 +11,8 @@
  
   <!--Connection Vercel and Local Host-->
   <script>
-    const isVercel = window.location.hostname.includes('vercel.app');    
-    const cssPath = isVercel ? '/features/users/css/index.css' : '../ovas_first/features/users/css/index.css'; 
+    const isNetlify = window.location.hostname.includes('netlify.app');    
+    const cssPath = isNetlify ? '/features/users/css/index.css' : '../ovas_first/features/users/css/index.css'; 
     const linkElement = document.createElement('link');
     linkElement.rel = 'stylesheet';
     linkElement.href = cssPath;
@@ -20,7 +20,7 @@
 </script>
 
 <script>
-  const isLocal = !window.location.hostname.includes('vercel.app');
+  const isLocal = !window.location.hostname.includes('netlify.app');
 
   document.addEventListener('DOMContentLoaded', function() {
       if (isLocal) {
