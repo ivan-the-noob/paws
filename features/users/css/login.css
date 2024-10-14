@@ -76,6 +76,7 @@ input{
 
 .login-right input[type="email"],
 .login-right input[type="password"] {
+    
     border-radius: 20px;
     padding: 10px 20px;
     color:#7A3015
@@ -120,5 +121,10 @@ input{
 
 .form-check-label{
     color: #fff !important
+}
+
+.error{
+    color: #fff;
+    font-weight: bold;
 }
 

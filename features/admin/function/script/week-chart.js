@@ -1,14 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
     var ctx = document.getElementById('weekSalesChart').getContext('2d');
-    var currentWeekDataset = [10, 15, 20, 25];
-    var lastWeekDataset = [5, 10, 15, 20];
-
+    
     var chartData = {
-        labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+        labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'], // Weeks based on your defined ranges
         datasets: [
             {
-                label: 'Current Week Sales',
-                data: [],
+                label: 'Current Month Sales',
+                data: [], // Will be populated from server
                 backgroundColor: 'rgba(54, 162, 235, 0.2)',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1,
@@ -19,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 pointHoverBorderColor: 'rgba(54, 162, 235, 1)'
             },
             {
-                label: 'Last Week Sales',
-                data: [],
+                label: 'Last Month Sales',
+                data: [], // Will be populated from server
                 backgroundColor: 'rgba(255, 99, 132, 0.2)',
                 borderColor: 'rgba(255, 99, 132, 1)',
                 borderWidth: 1,
@@ -40,10 +38,10 @@ document.addEventListener("DOMContentLoaded", function() {
             scales: {
                 y: {
                     beginAtZero: true,
-                    max: 30,
+                    max: 50000, // Adjust as needed based on your weekly data range
                     ticks: {
                         callback: function(value, index, values) {
-                            return value + 'k';
+                            return value + '₱';
                         }
                     }
                 }
@@ -56,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             if (label) {
                                 label += ': ';
                             }
-                            label += context.raw + 'k';
+                            label += context.raw + '₱';
                             return label;
                         }
                     }
@@ -65,19 +63,21 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    function drawDataset(datasetIndex, data, interval) {
-        let i = 0;
-        function addData() {
-            if (i < data.length) {
-                salesChart.data.datasets[datasetIndex].data.push(data[i]);
+    function fetchPaymentData() {
+        fetch('?action=getWeeklyPayments')
+            .then(response => response.json())
+            .then(data => {
+                var currentWeekData = data.currentWeek; // Data for current month
+                var lastWeekData = data.lastWeek; // Data for last month
+
+                // Reset datasets
+                salesChart.data.datasets[0].data = currentWeekData;
+                salesChart.data.datasets[1].data = lastWeekData;
+
+                // Update the chart
                 salesChart.update();
-                i++;
-                setTimeout(addData, interval);
-            }
-        }
-        addData();
+            });
     }
 
-    drawDataset(0, currentWeekDataset, 200);
-    drawDataset(1, lastWeekDataset, 200);
+    fetchPaymentData();
 });
